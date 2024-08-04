@@ -1,0 +1,90 @@
+body {
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+h1, h2 {
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+#chat {
+	display: none;
+}
+
+#chatbox {
+	height: calc(100vh - 250px);
+	/* Adjust the height calculation as needed */
+	overflow-y: scroll;
+	border: 1px solid #ccc;
+	padding: 10px;
+	background-color: #f9f9f9;
+}
+#user-list{
+ 	height: 227px;
+	/* Adjust the height calculation as needed */
+	overflow-y: scroll;
+	border: 1px solid #ccc;
+	padding: 10px;
+	background-color: #f9f9f9;
+ }
+.chat-message {
+	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.chat-message .message-sender {
+	font-weight: bold;
+}
+
+.chat-message .message-content {
+	margin-left: 10px;
+}
+
+.system-message {
+	text-align: center;
+	color: #777;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.message-sent {
+	background-color: #e6f7ff;
+	text-align: right;
+}
+
+.message-received {
+	background-color: #f2f2f2;
+	text-align: left;
+}
+
+.top-right {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: flex;
+	align-items: center;
+}
+
+#user-list-container {
+	display: block;
+	height: calc(100vh - 250px);
+	overflow-y: auto;
+	border: 1px solid #ccc;
+	padding: 10px;
+	background-color: #f9f9f9;
+}
+
+#user-list-container.active {
+	display: block;
+}
+
+.emoji {
+	font-size: 24px;
+	cursor: pointer;
+	margin: 5px;
+}
+
+.selected-emoji {
+	border: 2px solid #007bff;
+	border-radius: 50%;
+}
